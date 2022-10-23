@@ -30,8 +30,9 @@ section.alternate-background {
   color: #fff;
 }
 
-img {
+main img { 
   width: 100%;
+  height: auto; 
 }
 
 /* ---  Groups & Items --- */
@@ -56,11 +57,12 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 48px; 
   color: #fff;
 }
 
@@ -71,6 +73,7 @@ header nav {
 
 header nav ul {
   display: flex;
+  list-style: none; 
 }
 
 header nav ul li {
@@ -110,7 +113,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 60%;
+  width: 66%; 
 }
 
 form button {
@@ -141,57 +144,70 @@ footer p {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    align-items: center; 
 }
 
 .logo {
-    margin: 14px 0;
-    padding-top: 0;
+    font-size: 40px; 
+    justify-content: center; 
 }
 
 header nav {
-  margin-top: 30px;
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 20px;
 }
 
-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-form div {
-  flex-direction: column;
-  justify-content: center;
-}
-
-form label {
-  margin: 0;
-}
-
-form select,
-form input {
-  margin: 0px;
-  width: 100%;
-}
-
-.group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid-column {
-  display: flex;
-  flex: 1;
-  flex-direction: column; 
-  margin: 20px;
-}
-
-.grid-row {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
+header nav ul li a:hover {
+  color: #bdbdbd;
 }
 
 }
+
+@media all and (min-width: 1280px) {
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    margin: 20px;
+  }
+  
+  .grid-row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  form div {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  form select,
+  form input {
+    margin: 0px;
+    width: 180px;
+  }
+
+  form button {
+    width: 150%;
+  }
+
+}
+
+
+
